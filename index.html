@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Centre | Premium Spices & Herbs</title>
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Promo Bar -->
+    <div class="promo-bar">
+        FREE DELIVERY IN GABORONE ON ORDERS OVER P500
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-top">
+            <div class="logo">THE <span>FLAVOR CENTRE</span></div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search spices, herbs, marinades...">
+                <button>SEARCH</button>
+            </div>
+
+            <div class="header-icons">
+                <a href="#" class="icon">♡</a>
+                <a href="#" class="icon cart">🛒 <span class="cart-count">0</span></a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#" class="active">SPICES & BLENDS</a>
+            <a href="#">BEST SELLERS</a>
+            <a href="#">MARINADES</a>
+            <a href="#">DRIED FRUITS & SEEDS</a>
+            <a href="#">HEALTHY SALTS</a>
+            <a href="#">TEAS</a>
+            <a href="#" class="nav-right">RECIPES</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=2000&auto=format&fit=crop" alt="Premium Spices">
+        <div class="hero-overlay">
+            <div class="hero-text-box">
+                <h1>It's Flavour Time.</h1>
+                <p>Premium spices, curated blends, and global flavors, right here in Riverwalk, Gaborone.</p>
+                <a href="#shop" class="btn-primary">SHOP NOW →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <div class="trust-badges">
+        <div class="badge">⭐ Over 15,000 Happy Customers</div>
+        <div class="badge">🌿 100% Natural & Fresh</div>
+        <div class="badge">📍 Based at Riverwalk, Gaborone</div>
+        <div class="badge">🚚 Fast Local Delivery</div>
+    </div>
+
+    <!-- Best Sellers (Product Grid) -->
+    <section id="shop" class="section">
+        <div class="section-header">
+            <h2>Our Best Sellers</h2>
+            <p>Elevate your cooking with our most loved blends.</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=800&auto=format&fit=crop" alt="Paprika">
+                    <span class="tag">Best Seller</span>
+                </div>
+                <div class="product-info">
+                    <p class="category">SPICES</p>
+                    <h3>Smoked Paprika</h3>
+                    <p class="price">P 85.00</p>
+                    <button class="whatsapp-btn" onclick="orderViaWhatsApp('Smoked Paprika', 'P 85.00')">
+                        Order via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?q=80&w=800&auto=format&fit=crop" alt="Mixed Herbs">
+                </div>
+                <div class="product-info">
+                    <p class="category">HERBS</p>
+                    <h3>Mixed Mediterranean Herbs</h3>
+                    <p class="price">P 65.00</p>
+                    <button class="whatsapp-btn" onclick="orderViaWhatsApp('Mixed Mediterranean Herbs', 'P 65.00')">
+                        Order via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop" alt="Marinade">
+                </div>
+                <div class="product-info">
+                    <p class="category">MARINADES</p>
+                    <h3>Peri-Peri Chicken Marinade</h3>
+                    <p class="price">P 95.00</p>
+                    <button class="whatsapp-btn" onclick="orderViaWhatsApp('Peri-Peri Chicken Marinade', 'P 95.00')">
+                        Order via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="view-all">
+            <a href="#" class="btn-outline">View All Products</a>
+        </div>
+    </section>
+
+    <!-- Brand Story Section (Like the Pitmaster) -->
+    <section class="story-section">
+        <div class="story-image">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1000&auto=format&fit=crop" alt="Cooking with Spices">
+        </div>
+        <div class="story-content">
+            <p class="eyebrow">THE FLAVOR CENTRE PROMISE</p>
+            <h2>Flavour Magic, Crafted for You.</h2>
+            <p>We believe that a great meal starts with the right spices. That's why Flavor Centre sources only the freshest, most aromatic ingredients from around the world, bringing them straight to Riverwalk, Gaborone.</p>
+            
+            <div class="quote-box">
+                <p>"From healthy salts to vibrant marinades, our spices put the magic right into the palm of your hand."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section bg-light">
+        <div class="section-header">
+            <h2>What Our Customers Say</h2>
+        </div>
+        <div class="review-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"The Smoked Paprika changed my braai game forever. The delivery to Extension 12 was so fast!"</p>
+                <span class="reviewer">- Tumelo K.</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"I love that I can order straight from WhatsApp. The marinades are absolutely top tier."</p>
+                <span class="reviewer">- Sarah M.</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Finally, a place in Gaborone with premium healthy salts and dried fruits. Highly recommended."</p>
+                <span class="reviewer">- Naledi B.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">THE FLAVOR CENTRE</div>
+            <p>Riverwalk Mall, Gaborone, Botswana</p>
+            <p>Open: Mon - Sat | 9:00 AM - 7:00 PM</p>
+            <p>WhatsApp: <a href="#">+267 7X XXX XXX</a></p>
+        </div>
+        <p class="copyright">&copy; 2024 Flavor Centre. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/267XXXXXXXXX?text=Hi%20Flavor%20Centre,%20I%20have%20a%20question%20about%20your%20spices!" target="_blank" class="floating-wa">
+        <svg viewBox="0 0 32 32" width="35" height="35" fill="currentColor"><path d="M16 0A16 16 0 0 0 0 16c0 2.8.7 5.5 2 7.8L0 32l8.4-2.2A15.9 15.9 0 0 0 16 32a16 16 0 0 0 16-16A16 16 0 0 0 16 0zm0 29.3c-2.4 0-4.8-.6-6.8-1.9l-.5-.3-5 1.3 1.3-4.9-.3-.5A13.3 13.3 0 0 1 2.7 16 13.3 13.3 0 0 1 16 2.7 13.3 13.3 0 0 1 29.3 16 13.3 13.3 0 0 1 16 29.3zM21 18.8c-.3-.2-1.8-.9-2-1s-.5-.1-.7.2-.8 1-.9 1.2-.3.2-.6.1a10.8 10.8 0 0 1-3.2-2 12 12 0 0 1-2.2-2.7c-.2-.4 0-.6.2-.8l.4-.5c.2-.2.2-.3.3-.5s0-.4 0-.6-.7-1.7-1-2.3c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.1 1.1-1.1 2.6 1.1 3.1 1.3 3.3 2.2 3.4 5.4 4.8c.8.3 1.4.5 1.9.6.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.1-1.5s.3-1.4.2-1.5-.2-.2-.5-.3z"/></svg>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
